@@ -1,0 +1,23 @@
+body {
+  letter-spacing: 0.2em;
+  font-size: 0.8em;
+  background: rgb(94, 124, 156);
+  background: linear-gradient(
+    90deg,
+    rgba(94, 124, 156, 1) 0%,
+    rgba(172, 200, 229, 1) 47%,
+    rgba(109, 160, 213, 1) 98%
+  );
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 400px;
+  backdrop-filter: blur(10px);
+}
+h1 {
+  color: #112a46;
+}
+
+label {
+  color: #112a46;
+}

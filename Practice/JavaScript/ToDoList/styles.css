@@ -1,0 +1,29 @@
+body {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  font-family: "Montserrat Alternates";
+}
+
+.container {
+  max-width: 400px;
+}
+
+input[type="text"],
+input[type="text"]:focus {
+  color: rgb(255, 247, 199);
+  border: none;
+  background: rgba(85, 90, 60, 0.452);
+  max-width: 400px;
+}
+
+.todo li {
+  background: #aee1e1;
+}
+
+.delete {
+  cursor: pointer;
+}
+
+.filtered {
+  display: none !important;
+}

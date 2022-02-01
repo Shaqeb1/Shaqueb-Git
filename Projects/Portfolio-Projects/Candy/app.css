@@ -1,0 +1,9 @@
+body {
+  background-color: #fcecdd;
+  font-family: "Poppins";
+}
+
+#mainNavbar .navbar-brand {
+  color: #ff6701;
+  background-color: #fea82f;
+}
