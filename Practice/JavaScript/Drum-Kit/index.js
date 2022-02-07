@@ -46,5 +46,3 @@ function makeSound(key) {
       console.log(buttonInnerHTML);
   }
 }
-
-console.log("Hello I'am typing this for no reason please be kind huehuehuehue");
