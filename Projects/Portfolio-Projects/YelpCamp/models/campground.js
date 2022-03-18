@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+// Campground Schema Setup
 const CampgroundSchema = new Schema({
   title: String,
   price: String,
