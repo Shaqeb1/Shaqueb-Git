@@ -1,4 +1,7 @@
+<!-- Boilerplate Imported  -->
 <% layout('layouts/boilerplate.ejs') %>
+
+<!-- Campground Form To Edit Campground -->
 <form action="/campgrounds/<%= campground._id  %>?_method=PUT " method="POST">
   <div>
     <label for="title">Title</label>

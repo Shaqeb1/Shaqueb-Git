@@ -5,6 +5,7 @@ const methodOverride = require('method-override');
 const Campground = require('./models/campground');
 const ejsMate = require('ejs-mate');
 
+// Mongoose Connection
 mongoose.connect('mongodb://localhost:27017/yelp-camp', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -16,15 +17,18 @@ db.once('open', () => {
   console.log('Database connected');
 });
 
+// Express
 const app = express();
+// Ejs
 app.engine('ejs', ejsMate);
-
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+// Express methodOverride
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 
+// Express Routes
 app.get('/', (req, res) => {
   res.render('home');
 });
@@ -47,6 +51,7 @@ app.get('/campgrounds/:id', async (req, res) => {
   res.render('campgrounds/show', { campground });
 });
 
+// Entry edit
 app.get('/campgrounds/:id/edit', async (req, res) => {
   const campground = await Campground.findById(req.params.id);
   res.render('campgrounds/edit', { campground });
@@ -60,6 +65,7 @@ app.put('/campgrounds/:id', async (req, res) => {
   res.redirect(`/campgrounds/${campground._id}`);
 });
 
+// Deleting Entry
 app.delete('/campgrounds/:id', async (req, res) => {
   const { id } = req.params;
   await Campground.findByIdAndDelete(id);
