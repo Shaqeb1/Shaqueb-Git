@@ -20,31 +20,35 @@ export default function Signup() {
       <h2>sign up</h2>
       <label>
         <span>email:</span>
-        <input 
-          type="email" 
-          onChange={(e) => setEmail(e.target.value)} 
+        <input
+          type='email'
+          onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
       </label>
       <label>
         <span>password:</span>
-        <input 
-          type="password" 
-          onChange={(e) => setPassword(e.target.value)} 
-          value={password} 
+        <input
+          type='password'
+          onChange={(e) => setPassword(e.target.value)}
+          value={password}
         />
       </label>
       <label>
         <span>display name:</span>
-        <input 
-          type="text" 
+        <input
+          type='text'
           onChange={(e) => setDisplayName(e.target.value)}
           value={displayName}
         />
       </label>
-      { !isPending && <button className="btn">sign up</button> }
-      { isPending && <button className="btn" disabled>loading</button> }
-      { error && <p>{error}</p> }
+      {!isPending && <button className='btn'>SIGN UP</button>}
+      {isPending && (
+        <button className='btn' disabled>
+          loading
+        </button>
+      )}
+      {error && <p>{error}</p>}
     </form>
   )
 }
