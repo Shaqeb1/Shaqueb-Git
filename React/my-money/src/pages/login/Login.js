@@ -16,26 +16,30 @@ export default function Login() {
 
   return (
     <form onSubmit={handleSubmit} className={styles['login-form']}>
-      <h2>login</h2>
+      <h2>Login</h2>
       <label>
-        <span>email:</span>
-        <input 
-          type="email" 
-          onChange={(e) => setEmail(e.target.value)} 
+        <span>Email</span>
+        <input
+          type='email'
+          onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
       </label>
       <label>
-        <span>password:</span>
-        <input 
-          type="password" 
-          onChange={(e) => setPassword(e.target.value)} 
-          value={password} 
+        <span>Password</span>
+        <input
+          type='password'
+          onChange={(e) => setPassword(e.target.value)}
+          value={password}
         />
       </label>
-      { !isPending && <button className="btn">Login</button> }
-      { isPending && <button className="btn" disabled>loading</button> }
-      { error && <p>{error}</p> }
+      {!isPending && <button className='btn'>Login</button>}
+      {isPending && (
+        <button className='btn' disabled>
+          loading
+        </button>
+      )}
+      {error && <p>{error}</p>}
     </form>
   )
 }
