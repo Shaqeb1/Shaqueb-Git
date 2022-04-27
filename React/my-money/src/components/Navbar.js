@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <ul>
-        <li className={styles.title}>2SMT</li>
+        <li className={styles.title}>myMoneyTracker</li>
 
         {!user && (
           <>
