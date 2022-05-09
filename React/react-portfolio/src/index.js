@@ -1,20 +1,35 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
+import { createRoot } from 'react-dom/client'
+import './style.css'
 import App from './App'
-import reportWebVitals from './reportWebVitals'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+const rootElement = document.getElementById('root')
+const root = createRoot(rootElement)
+
+root.render(
+  <Router>
+    <App />
+  </Router>
 )
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals()
+const toggle = document.querySelector('.hover-show')
+
+toggle.addEventListener('click', () => {
+  toggle.classList.toggle('active')
+})
+
+let Icons = document.querySelectorAll('.navigation .icon')
+
+Icons.forEach((icon) => {
+  icon.addEventListener('click', () => {
+    changeactive()
+
+    icon.classList.add('active-nav')
+  })
+})
+
+function changeactive() {
+  Icons.forEach((icon) => {
+    icon.classList.remove('active-nav')
+  })
+}

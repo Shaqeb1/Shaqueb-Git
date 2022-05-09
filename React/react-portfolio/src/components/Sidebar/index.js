@@ -1,14 +1,14 @@
-import './index.scss';
-import { Link } from 'react-router-dom';
-import LogoS from '../../assets/images/logo-s.png';
+import './index.scss'
+import { Link } from 'react-router-dom'
+import LogoS from '../../assets/images/logo-s.png'
 
 const Sidebar = () => {
-  <div className='nav-bar'>
+  ;<div className='nav-bar'>
     <Link className='logo' to='/'>
       <img src={LogoS} alt='logo' />
       <img src={LogoS} alt='logo' />
     </Link>
-  </div>;
-};
+  </div>
+}
 
-export default Sidebar;
+export default Sidebar
