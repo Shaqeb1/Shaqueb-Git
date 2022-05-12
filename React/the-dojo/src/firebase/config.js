@@ -10,15 +10,14 @@ const firebaseConfig = {
   messagingSenderId: '499600221469',
   appId: '1:499600221469:web:7595cb76212335a159edf4',
 }
-
 // init firebase
 firebase.initializeApp(firebaseConfig)
 
 // init services
-
 const projectFirestore = firebase.firestore()
 const projectAuth = firebase.auth()
 
+// timestamp
 const timestamp = firebase.firestore.Timestamp
 
 export { projectFirestore, projectAuth, timestamp }
