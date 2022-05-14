@@ -6,7 +6,7 @@ export default function ProjectSummary({ project }) {
   const { deleteDocument } = useFirestore('projects')
   const { user } = useAuthContext()
   const history = useHistory()
-  const handleClick = (e) => {
+  const handleClick = () => {
     deleteDocument(project.id)
     history.push('/')
   }
