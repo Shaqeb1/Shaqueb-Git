@@ -16,7 +16,7 @@
   text-align: center;
   letter-spacing: 1px;
   padding: 40px 30px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 .sidebar .links {
   margin-top: 80px;
@@ -44,4 +44,12 @@
 }
 .sidebar .links .active img {
   filter: invert(40%);
+}
+
+/* avatar in sidebar */
+.sidebar .user .avatar {
+  margin-bottom: 10px;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #fff;
 }
