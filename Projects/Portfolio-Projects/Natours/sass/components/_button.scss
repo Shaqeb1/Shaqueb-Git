@@ -25,6 +25,17 @@
         transform: translateY(-0.1rem);
         box-shadow: 0 0.5rem 1rem;
     }
+
+    &--green {
+        background-image: linear-gradient(to right bottom,#099797, #7ed56f)  ;
+        color:  white;
+        font-weight: 700;  
+        &::after {
+            background-image: linear-gradient(to right bottom,#099797, #7ed56f)  ;
+        }
+    
+    }
+
     &--white {
         background-color: #fff ;
         color: #DF8589;
@@ -32,6 +43,7 @@
         &::after {
             background-color: #fff;
         }
+    
     }
     
     &::after {
