@@ -55,7 +55,7 @@
 
 .btn-text {
     &:link, &:visited {
-        color: $color-tertiary;
+        color: #DF8589;
         display: inline-block;
         text-decoration: none;
         padding: 3px;
@@ -66,7 +66,7 @@
     }
 
     &:hover {
-        background-color: $color-tertiary;
+        background-color: #DF8589;
         color: white;
         transform: translateY(-2px);
         box-shadow: 0 1rem 2rem rgba($color-tertiary, $alpha: .15);

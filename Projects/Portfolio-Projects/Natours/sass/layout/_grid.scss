@@ -17,11 +17,11 @@
     .col-1-of-2 {
         width: calc((100% - #{$gutter-horizontal})/ 2);
         float: left;
-       
     }
 
     .col-1-of-3 {
-        width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
     }
 
     .col-2-of-3 {
