@@ -1,4 +1,5 @@
 .btn {
+    &,
     &:link, 
     &:visited {
     text-transform: uppercase;
@@ -9,6 +10,8 @@
     transition: all .2;
     position: relative;
     font-size: 1.6rem;
+    border: none;
+    cursor: pointer;
     }
 
     &:hover {
