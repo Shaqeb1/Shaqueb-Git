@@ -42,3 +42,13 @@
 .u-margin-top-small {
     margin-top: 2rem !important;
 }
+
+.grid-2 {
+    display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 4rem;
+     align-content: space-between;
+     overflow: visible;
+     max-width: 114rem;
+     margin: 0 auto;
+   }
