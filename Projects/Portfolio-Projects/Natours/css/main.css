@@ -179,6 +179,13 @@ body {
 }
 
 /*
+0 - 600px: Phone
+600-900px Tablet Portrait
+900-1200px Tablet Landscape
+(1200-1800) Normal styles apply here
+1800+: Big desktops
+*/
+/*
 COLORS:
 
 #B09E97
