@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Image Gallery</title>
+</head>
+<body>
+    <!-- Global Container -->
+    <div class="flex items-center justify-center min-h-screen bg-cyan-50">
+        <!-- Card Container -->
+        <div class="bg-white p-6 m-3 space-y-10 shadow-2xl rounded-3xl md:p-40">
+            <!-- Menu Container -->
+            <div class="flex flex-col items-center justify-center space-y-3 md:flex-row md:space-y-0 md:space-x-8 md:mb-24 md:justify-end">
+                <!-- Menu Items -->
+                <div class="group">
+                    <a href="#">Vector</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"></div>
+                </div>
+                <div class="group">
+                    <a href="#">Illustrations</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"></div>
+                </div>
+                <div class="group">
+                    <a href="#">Images</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"></div>
+                </div>
+                <div class="group">
+                    <a href="#">Icons</a>
+                    <div class="mx-2 mt-2 duration-500 border-b-2 opacity-0 border-black group-hover:opacity-100"></div>
+                </div>
+            </div>
+            <!-- Search Container -->
+            <div class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0">
+                <!-- Input Container -->
+                <div class="flex justify-between border-b">
+                    <input type="text" class="ml-6 border-none md:w-80 placeholder:font-thin focus:outline-none" placeholder="Search">
+                    <button>
+                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.853 16.56c-1.683 1.517-3.911 2.44-6.353 2.44-5.243 0-9.5-4.257-9.5-9.5s4.257-9.5 9.5-9.5 9.5 4.257 9.5 9.5c0 2.442-.923 4.67-2.44 6.353l7.44 7.44-.707.707-7.44-7.44zm-6.353-15.56c4.691 0 8.5 3.809 8.5 8.5s-3.809 8.5-8.5 8.5-8.5-3.809-8.5-8.5 3.809-8.5 8.5-8.5z"/></svg>
+                    </button>
+                </div>
+                <button class="py-3 px-14 text-lg text-white md:ml-6 font-normal bg-black border border-black rounded-md shadow-2xl duration-200 hover:bg-white hover:text-black">
+                    Upload
+                </button>
+            </div>
+            <!-- Gallery Container -->
+            <div class="grid gap-4 md:grid-cols-3">
+                <!-- Image 1 -->
+                <div class="relative group">
+                    <img src="/img/img1.jpg" alt="" class="w-72">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Abstract Painting</p>
+                                <p class="text-sm">234 likes - 35 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 6v13.583l-3-2.634-3 2.634v-13.583h6zm2-2h-10v20l5-4.39 5 4.39v-20zm-2-2h-10v19h1v-18h9v-1zm-2-2h-10v19h1v-18h9v-1z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="/img/img2.jpg" alt="" class="w-72">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Abstract Painting</p>
+                                <p class="text-sm">234 likes - 35 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 6v13.583l-3-2.634-3 2.634v-13.583h6zm2-2h-10v20l5-4.39 5 4.39v-20zm-2-2h-10v19h1v-18h9v-1zm-2-2h-10v19h1v-18h9v-1z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="/img/img3.jpg" alt="" class="w-72">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Abstract Painting</p>
+                                <p class="text-sm">234 likes - 35 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 6v13.583l-3-2.634-3 2.634v-13.583h6zm2-2h-10v20l5-4.39 5 4.39v-20zm-2-2h-10v19h1v-18h9v-1zm-2-2h-10v19h1v-18h9v-1z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="/img/img4.jpg" alt="" class="w-72">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Abstract Painting</p>
+                                <p class="text-sm">234 likes - 35 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 6v13.583l-3-2.634-3 2.634v-13.583h6zm2-2h-10v20l5-4.39 5 4.39v-20zm-2-2h-10v19h1v-18h9v-1zm-2-2h-10v19h1v-18h9v-1z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="/img/img5.jpg" alt="" class="w-72">
+                    <div class="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+                        <div class="flex justify-between w-full">
+                            <div class="font-normal">
+                                <p class="text-sm">Abstract Painting</p>
+                                <p class="text-sm">234 likes - 35 Shares</p>
+                            </div>
+                            <div class="flex items-center">
+                                <svg class="fill-current text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 6v13.583l-3-2.634-3 2.634v-13.583h6zm2-2h-10v20l5-4.39 5 4.39v-20zm-2-2h-10v19h1v-18h9v-1zm-2-2h-10v19h1v-18h9v-1z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
