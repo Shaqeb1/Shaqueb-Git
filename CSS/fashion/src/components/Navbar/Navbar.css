@@ -1,0 +1,33 @@
+.navbar {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-logo {
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+.navbar-category-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-items-container {
+  margin-top: 1rem;
+}
+
+.category-items {
+  margin: 2rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  border-bottom: 1px solid black;
+}

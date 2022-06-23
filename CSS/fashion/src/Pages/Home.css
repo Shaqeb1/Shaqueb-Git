@@ -1,0 +1,142 @@
+#first-section-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  poition: relative;
+}
+
+.section-explore {
+  position: absolute;
+  bottom: 10px;
+  left: 100px;
+}
+
+.section-explore-heading {
+  color: white;
+  text-transform: uppercase;
+}
+
+.discover-button {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: white;
+  font-weight: bold;
+}
+
+.section-gap {
+  padding: 5% 25% 5% 25%;
+}
+
+.section-gap-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-gap-heading {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.second-section {
+  margin-top: 100px;
+  position: relative;
+}
+
+#second-section-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.second-section-explore {
+  position: absolute;
+  bottom: 180px;
+  right: 130px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.second-discover-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid white;
+  color: black;
+  background: white;
+  font-weight: bold;
+}
+
+.third-section {
+  margin-top: 100px;
+  position: relative;
+}
+
+.third-section-handbag-image {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.third-section-explore {
+  position: absolute;
+  bottom: 150px;
+  left: 60px;
+  text-transform: uppercase;
+  color: white;
+}
+.third-discover-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dfbb9d;
+  color: white;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#fourth-section-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.fourth-section {
+  position: relative;
+  margin-top: 100px;
+}
+
+.fourth-section-explore {
+  position: absolute;
+  bottom: 120px;
+  left: 100px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.fourth-discover-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: white;
+  color: black;
+}
