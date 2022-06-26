@@ -5,17 +5,211 @@
   font-family: "Poppins", sans-serif;
 }
 
+a,
+button,
+h1,
+h2,
+h3,
+h4 {
+  color: rgba(40, 40, 40);
+}
+
 nav {
   position: fixed;
-  width: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0% 20%;
   min-height: 10vh;
-  background-color: rgba(255, 255, 255, 0.4);
-  background-color: blur(10px);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
   z-index: 10;
+}
 
+nav,
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9rem;
+}
 
+.nav-links a,
+.nav-links button {
+  margin-left: 2rem;
+}
+.logo {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.buy-button {
+  padding: 0.5rem 2rem;
+  font-size: 0.8rem;
+  background: #3056f5;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* First Page */
+
+.first-page {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-page-text {
+  z-index: 2;
+  text-align: center;
+  padding-bottom: 10rem;
+  position: absolute;
+  top: 250px;
+}
+
+.first-page-title {
+  font-size: 1.5rem;
+}
+
+.first-page-subtitle {
+  font-size: 3rem;
+}
+
+.intro-video {
+  position: relative;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100vw;
+}
+
+/* 2nd Section */
+
+.second-page {
+  min-height: 125vh;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+}
+
+.smoke-video {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.second-text {
+  padding: 5% 30%;
+  position: relative;
+  z-index: 2;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+/* Third Page */
+
+.third-page {
+  position: relative;
+  padding: 0 20%;
+}
+
+.product-text-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
+}
+
+.phone-size {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.pro-size {
+  text-align: right:
+}
+
+.max-size {
+  text-align: left;
+}
+
+.product-images {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.large-phone {
+  position: relative;
+  transform: translateX(40%) scale(0.8);
+  z-index: 1;
+}
+
+.small-phone {
+  position: relative;
+  z-index: 2;
+  transform: translateX(-40%) scale(0.8);
+}
+
+.retina-line {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Forth page */
+
+.forth-page {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.purchase-left {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  margin: 0 200px;
+}
+
+.phone-gallery: {
+  display: flex;
+  align-self: flex-start;
+}
+
+.phone-gallery-container {
+  min-width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swatch-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.purchase-right {
+  max-width: 50vw;
+  padding: 0;
+  margin:0;
+}
+
+.purchase-right, img {
 }
