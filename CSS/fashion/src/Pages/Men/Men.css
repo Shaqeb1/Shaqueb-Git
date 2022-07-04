@@ -1,0 +1,12 @@
+.mens-heading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mens-heading {
+  font-size: 2rem;
+  display: block;
+  margin-top: 50px;
+  text-transform: uppercase;
+}

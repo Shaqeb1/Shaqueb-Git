@@ -7,8 +7,10 @@
   top: 0;
   bottom: 0;
   z-index: -1;
-  poition: relative;
+  position: relative;
 }
+
+
 
 .section-explore {
   position: absolute;
@@ -34,6 +36,8 @@
   font-weight: bold;
 }
 
+
+
 .section-gap {
   padding: 5% 25% 5% 25%;
 }
@@ -48,6 +52,7 @@
   font-size: 3rem;
   text-transform: uppercase;
 }
+
 
 .second-section {
   margin-top: 100px;
@@ -139,4 +144,76 @@
   padding-bottom: 15px;
   background: white;
   color: black;
+}
+
+
+@media (max-width: 500px) {
+  #first-section-video {
+    max-height: 700px;
+  }
+
+  .section-explore {
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 100px;
+  }
+
+  .discover-button {
+    font-size: 0.8rem;
+  }
+
+  .section-explore-heading {
+    font-size: 0.8rem;
+  }
+
+  .section-gap {
+    padding: 5% 10% 0% 10% ;
+  }
+  
+  .section-gap-heading {
+    font-size: 2rem;
+  }
+
+  #second-section-video{ 
+    max-height: 700px;
+    z-index: -1;
+  }
+
+  .second-section-explore {
+    bottom: 100px;
+    right: 26%;
+  }
+
+  .second-discover-button {
+    font-size: 0.8rem;
+  }
+
+  .second-section-explore-heading {
+    font-size: 0.9rem;
+  }
+
+  .third-discover-button {
+    font-size: 0.8rem;
+  }
+
+  .third-section-explore {
+    bottom: 100px;
+    left: 24%;
+  }
+
+  .third-section-explore-heading {
+    font-size: 1.2rem;
+  }
+
+  .fourth-section-explore {
+    right: 24%;
+  }
+
+  .fourth-discover-button {
+    font-size: 0.8rem;
+  }
+
+  .fourth-section-explore-heading {
+    font-size: 1.2rem;
+  }
 }

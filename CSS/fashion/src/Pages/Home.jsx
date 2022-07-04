@@ -1,21 +1,30 @@
 import React from 'react'
 import video1 from '../assets/videos/video1.mp4'
 import './Home.css'
+import { useEffect, useRef } from 'react'
 import mensVideo from '../assets/videos/mens-video-1.mp4'
 import handbag from '../assets/images/handbag.jpg'
 import heels from '../assets/videos/heels.mp4'
+import {gsap} from 'gsap'
 
 const Home = () => {
+    const exploreRef = useRef(null)
+    useEffect(() => {
+        const el = exploreRef.current
+        gsap.fromTo(el, {x: -500, opacity: 0}, {x: 0, opacity: 1, duration: 2} )
+    })
+
   return (
     <>
+        
         <section className='first-section'>
             <div className='video-container'>
                 <video autoPlay loop muted id='first-section-video'>
                     <source src={video1} />
                 </video>
             </div>
-            <div className='section-explore'>
-                <h2 className='section-explore-heading'>
+            <div className='section-explore' ref={exploreRef}>
+                <h2 className='section-explore-heading '>
                     Women's Collection 2022
                 </h2>
                 <div className='discover-button'>
@@ -79,6 +88,7 @@ const Home = () => {
                 </h2>
             </div>
         </section>
+        
     </>
   )
 }

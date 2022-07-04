@@ -12,6 +12,27 @@
 .navbar-logo {
   font-size: 2rem;
   letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+
+
+
+.signIn-button {
+  font-size: 1.5rem;
+  padding-left: 20px;
+  display: inline-block;
+  position: absolute;
+  right: 100px;
+}
+
+.bag-button {
+  display: inline-block;
+  position: absolute;
+  right: 50px;
+  font-size: 1.5rem;
 }
 
 .navbar-category-container {
@@ -30,4 +51,28 @@
   color: black;
   font-size: 1.2rem;
   border-bottom: 1px solid black;
+}
+
+@media (max-width: 500px) {
+  .navbar-logo {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+  }
+
+  .signIn-button {
+    font-size: 0.7rem;
+    right: 50px;
+    top: 22px;
+  }
+
+  .bag-button {
+    font-size:0.7rem;
+    right: 15px;
+    top: 22px
+  }
+
+  .category-items {
+    margin: 1rem;
+    font-size: 1rem;
+  }
 }
