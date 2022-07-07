@@ -3,6 +3,7 @@ import './Categories.css'
 import {Link} from 'react-router-dom'
 const Categories = () => {
   return (
+    // Categories 
     <div className='categories-container'>
         <ul className='categories-items'>
            <Link to='/men' className='category-item'>Men</Link>
