@@ -10,7 +10,7 @@ const Navbar = () => {
             <Link className='navbar-logo' to='/'>Threads</Link>
         </div>
         <div className='navbar-button-container'>
-            <div className='signIn-button'>SignIn</div>
+            <Link to='/signIn' className='signIn-button'>SignIn</Link>
             <div className='cart-button'>Cart</div>
         </div>
     </nav>
