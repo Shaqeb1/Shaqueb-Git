@@ -1,0 +1,21 @@
+.signUp-container {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+}
+
+.signUp-heading {
+    font-size: 1.2rem;
+    margin-top: 10px 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.signUp-span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    opacity: 80%;
+    text-transform: uppercase;
+}
+

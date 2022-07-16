@@ -1,0 +1,27 @@
+.form-group {
+    position: relative;
+    margin: 45px 0;
+}
+.from-input {
+    background: none;
+    background-color: beige;
+    color: gray;
+    font-size:2rem;
+    padding: 8px 8px 8px 5px;
+    display: block;
+    border: none;
+    border-radius:0 ;
+    -webkit-border-radius:0 ;
+    -moz-border-radius:0 ;
+    -ms-border-radius:0 ;
+    -o-border-radius:0 ;
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+}
+
+.from-input-label {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
