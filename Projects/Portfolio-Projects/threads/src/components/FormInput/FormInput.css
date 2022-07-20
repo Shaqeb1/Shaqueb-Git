@@ -2,7 +2,7 @@
     position: relative;
     margin: 45px 0;
 }
-.from-input {
+.form-input {
     background: none;
     background-color: white;
     color: gray;
@@ -19,7 +19,7 @@
     margin: 10px 0;
 }
 
-.from-input-label {
+.form-input-label {
     font-size: 1.2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
