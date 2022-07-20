@@ -5,7 +5,7 @@ import Men from './pages/Men/Men'
 import Women from "./pages/Women/Women";
 import Shoes from "./pages/Shoes/Shoes";
 import Bags from './pages/Bags/Bags';
-import SignIn from "./components/SignIn/SignIn";
+import Authentication from './components/Authentication/Authentication'
 
 const  Routing = ()=>  {
   return (
@@ -16,7 +16,7 @@ const  Routing = ()=>  {
       <Route path="/women" element={<Women/>}/>
       <Route path="/shoes" element={<Shoes/>}/>
       <Route path="/Bags" element={<Bags/>}/>
-      <Route path="/signIn" element={<SignIn/>}/>
+      <Route path="/auth" element={<Authentication/>}/>
     </Route>
    </Routes>
   );

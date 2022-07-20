@@ -12,7 +12,7 @@ const Navbar = () => {
         </div>
         {/* SigIn And Cart button container */}
         <div className='navbar-button-container'>
-            <Link to='/signIn' className='signIn-button'>SignIn</Link>
+            <Link to='/auth' className='signIn-button'>SignIn</Link>
             <div className='cart-button'>Cart</div>
         </div>
     </nav>
