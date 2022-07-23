@@ -1,8 +1,14 @@
-import React from 'react'
+import { useContext } from 'react'
 import './Navbar.css'
+import { UserContext } from '../../Context/UserContext'
 import {Outlet, Link} from 'react-router-dom'
-
+import { signOutUser } from '../../utils/firebase/firebase.utils'
 const Navbar = () => {
+  const {currentUser, setCurrentUser} = useContext(UserContext)
+  const signOutHandler = async() => {
+    await signOutUser()
+    setCurrentUser(null)
+  }
   return (
     <>
     <nav className='navbar-container'>
@@ -12,7 +18,16 @@ const Navbar = () => {
         </div>
         {/* SigIn And Cart button container */}
         <div className='navbar-button-container'>
-            <Link to='/auth' className='signIn-button'>SignIn</Link>
+            {currentUser ? (
+            <span className='signIn-button' onClick={signOutHandler}>
+              {' '}
+              SIGN OUT{' '}
+            </span>
+          ) : (
+            <Link className='signIn-button' to='/auth'>
+              SIGN IN
+            </Link>
+          )}
             <div className='cart-button'>Cart</div>
         </div>
     </nav>
@@ -22,3 +37,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+

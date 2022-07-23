@@ -13,7 +13,6 @@ const tlIntro = gsap.timeline({
 const tlH = gsap.timeline({
   scrollTrigger: {
     trigger: ".second-page",
-    markers: { startColor: "blue", endColor: "blue" },
     scrub: true,
     start: "-40%",
     end: "40%",
@@ -29,7 +28,6 @@ tlH.fromTo(
 const tlHRemove = gsap.timeline({
   scrollTrigger: {
     trigger: ".second-page",
-    markers: { startColor: "pink", endColor: "pink" },
     scrub: true,
     start: "-20%",
     end: "60%",
@@ -44,7 +42,6 @@ const tlSplit = gsap.timeline({
     trigger: ".third-page",
     start: "-25%",
     end: "30%",
-    markers: true,
     scrub: true,
   },
 });
