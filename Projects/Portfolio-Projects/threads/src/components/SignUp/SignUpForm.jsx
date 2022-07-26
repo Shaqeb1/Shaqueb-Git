@@ -1,7 +1,6 @@
-import {useState, useContext} from 'react'
+import {useState} from 'react'
 import { createAuthUserWithEmailAndPassword , createUserDocumentFromAuth} from '../../utils/firebase/firebase.utils'
 import FormInput from '../FormInput/FormInput'
-import {UserContext} from '../../Context/UserContext'
 import './SignUpForm.css'
 import Button from '../Button/Button'
 const defaultFormFields = {
@@ -14,7 +13,7 @@ const defaultFormFields = {
 const SignUpForm = () => {
     const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
-  const { setCurrentUser } = useContext(UserContext);
+
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
@@ -36,7 +35,6 @@ const SignUpForm = () => {
 
       await createUserDocumentFromAuth(user, { displayName });
       resetFormFields();
-      setCurrentUser(user);
     } catch (error) {
       if (error.code === "auth/email-already-in-use") {
         alert("Cannot create user, email already in use");
