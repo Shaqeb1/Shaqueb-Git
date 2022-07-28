@@ -8,6 +8,7 @@
 .categories-items {
     display: flex;
     font-size: 2.5rem;
+    text-transform: uppercase;
 }
 
 .category-item {
