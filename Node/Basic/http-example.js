@@ -1,12 +1,5 @@
-const {get} = require('http')
+const axios = require('axios')
 
-get('http://www.google.com', (res) => {
-    res.on('data', (chunk) => {
-        console.log(`Data chunk is ${chunk}`)
-    })
-    res.on('end', () => {
-        console.log('No more data')
-    })
-})
-
-req.end()
+axios.get('http://www.google.com')
+.then(res => console.log(res))
+.catch(err => console.log(err))
