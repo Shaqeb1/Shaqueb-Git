@@ -54,7 +54,7 @@ const ControlledInputs = () => {
           </div>
           <button type='submit'>add person</button>
         </form>
-        {people.map((person, index) => {
+        {people.map(person => {
           const { id, firstName, email } = person
           return (
             <div
